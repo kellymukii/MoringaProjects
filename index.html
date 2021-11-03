@@ -13,11 +13,41 @@
   text-align: center;
   color: white;
 }
+/* Menu style starting*/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+/* Menu style ending*/
+/* Button style Starting*/
 .button {
   background-color: #4CAF50; /* Green */
   border: none;
-  color: white;
+  color: blanchedalmond;
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -26,30 +56,11 @@
   margin: 4px 2px;
   cursor: pointer;
   position: absolute;
-  top: 8px;
-  left: 16px;
+  top: 44px;
+  right: -39px;
 }
-
 .button5 {border-radius: 50%;}
-
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
-
-
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
-
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
+/* Button style Ending*/
 
 .centered {
   position: absolute;
@@ -64,6 +75,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   color: #4CAF50;
+  font-style: italic;
 }
 
 p {
@@ -80,13 +92,19 @@ a {
 </head>
 <body>
 <div class="container">
-  <img src="flowers-nail-polish-flatlay.jpg" alt="Snow" style="width:100%;">
-  <div class="bottom-left">Bottom Left</div>
+  <div class="navbar">
+    <a href="file:///D:/Moringa/moringa-school-projects/MoringaProjects/index.html">Home</a>
+    <a href="file:///D:/Moringa/moringa-school-projects/MoringaProjects/gallery.html">Gallery</a>
+    <a href="file:///D:/Moringa/moringa-school-projects/MoringaProjects/contactform.html">Contact</a>
+  </div>
+
+  <img src="island1.jpg" alt="Snow" style="width:100%;">
   <button class="button button5">My New Button</button>
+  <div class="bottom-left">Bottom Left</div>
   <div class="top-right">Top Right</div>
   <div class="bottom-right">Bottom Right</div>
   <div class="centered">
-    <h1>This is My first single page site</h1>
+    <h1>Welcome to the Kelly's Island</h1>
     <p style="color:black">This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
       The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored
       <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p> 

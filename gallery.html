@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+/* Menu style starting*/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+/* Menu style ending*/
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+ <!-- Menu starting-->
+  
+ <div class="navbar">
+    <a href="file:///D:/Moringa/moringa-school-projects/MoringaProjects/index.html">Home</a>
+    <a href="file:///D:/Moringa/moringa-school-projects/MoringaProjects/gallery.html">Gallery</a>
+    <a href="file:///D:/Moringa/moringa-school-projects/MoringaProjects/contactform.html">Contact</a>
+  </div>
+  <!-- Menu Ending-->
+
+<div class="row">
+  <div class="column">
+    <img id ="ïmage" src="pic_trulli.jpg" alt="Snow" style="width:100%" >
+  </div>
+  <div class="column">
+    <img src="pic_trulli.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="pic_trulli.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+<div class="row">
+    <div class="column">
+      <img src="Island2.jpg" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="Island2.jpg" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="Island2.jpg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+
+</body>
+</html>

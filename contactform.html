@@ -5,6 +5,41 @@
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
+/* Menu style starting*/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+/* Menu style ending*/
+h3 {
+  text-transform: uppercase;
+  color: #4CAF50;
+  font-style: italic;
+}
 
 input[type=text], select, textarea {
   width: 100%;
@@ -33,15 +68,22 @@ input[type=submit]:hover {
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 70px;
 }
 </style>
 </head>
 <body>
-
-<h3>Contact Form</h3>
+  <!-- Menu starting-->
+  
+    <div class="navbar">
+      <a href="file:///D:/Moringa/moringa-school-projects/MoringaProjects/index.html">Home</a>
+      <a href="file:///D:/Moringa/moringa-school-projects/MoringaProjects/gallery.html">Gallery</a>
+      <a href="file:///D:/Moringa/moringa-school-projects/MoringaProjects/contactform.html">Contact</a>
+    </div>
+    <!-- Menu Ending-->
 
 <div class="container">
+  <h3>Contact Form</h3>
   <form action="/action_page.php">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -51,9 +93,9 @@ input[type=submit]:hover {
 
     <label for="country">Country</label>
     <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
+      <option value="Kenya">Kenya</option>
+      <option value="Uganda">Uganda</option>
+      <option value="Rwanda">Rwanda</option>
     </select>
 
     <label for="subject">Subject</label>
